@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "id": "vpn-001",
+    "title": "How to connect to the corporate VPN",
+    "category": "network",
+    "keywords": ["vpn", "remote", "connect", "network", "access"],
+    "content": "Install the company VPN client from the IT portal, sign in with your corporate email, and approve the MFA prompt on your phone. Select the 'Corp-Main' profile and click Connect. If the connection times out, check that UDP port 1194 is not blocked by your home router."
+  },
+  {
+    "id": "vpn-002",
+    "title": "VPN connects but internal sites do not load",
+    "category": "network",
+    "keywords": ["vpn", "dns", "internal", "sites", "resolve", "timeout"],
+    "content": "This is usually a DNS problem. Disconnect, flush your DNS cache (Windows: ipconfig /flushdns), and reconnect. If it persists, switch the VPN profile to 'Corp-Backup' and open a ticket with the affected hostnames."
+  },
+  {
+    "id": "pwd-001",
+    "title": "Reset a forgotten password",
+    "category": "accounts",
+    "keywords": ["password", "reset", "forgot", "login", "locked", "account"],
+    "content": "Go to the self-service portal and choose 'Forgot password'. A reset link is sent to your registered phone via SMS. Accounts are locked for 15 minutes after 5 failed attempts. If you have no access to your phone, open a ticket so IT can verify your identity."
+  },
+  {
+    "id": "mfa-001",
+    "title": "Lost or replaced phone with MFA",
+    "category": "accounts",
+    "keywords": ["mfa", "2fa", "phone", "authenticator", "lost", "new", "token"],
+    "content": "MFA cannot be transferred automatically. Open a ticket with priority 'high' from a trusted device; IT will verify your identity with your manager and issue a temporary bypass code valid for 24 hours so you can enroll the new phone."
+  },
+  {
+    "id": "mail-001",
+    "title": "Outlook not syncing new email",
+    "category": "email",
+    "keywords": ["outlook", "email", "mail", "sync", "inbox", "not", "updating"],
+    "content": "Check that Outlook is not in Offline mode (Send/Receive tab). Then restart Outlook. If mail is still stale, remove and re-add the account under File > Account Settings. Mailbox size limit is 50 GB; archive old mail if you are near it."
+  },
+  {
+    "id": "print-001",
+    "title": "Printer not found or offline",
+    "category": "hardware",
+    "keywords": ["printer", "print", "offline", "office", "driver", "queue"],
+    "content": "Make sure you are on the office network or the VPN. Remove the printer under Settings > Printers and re-add it by name (format: PRN-<floor>-<number>). Clear the print queue if jobs are stuck. If the printer shows offline for everyone, open a ticket with the printer label."
+  },
+  {
+    "id": "svc-001",
+    "title": "Internal web service is slow or returning 502 errors",
+    "category": "services",
+    "keywords": ["service", "502", "slow", "down", "error", "web", "outage", "status"],
+    "content": "Check the service status first. A 502 usually means the upstream application process has crashed or is overloaded. If status shows the service as degraded or down, a restart normally resolves it; restarts are logged and require confirmation. If the issue returns within an hour, open a ticket so the root cause is investigated."
+  },
+  {
+    "id": "sw-001",
+    "title": "Requesting new software",
+    "category": "software",
+    "keywords": ["software", "install", "license", "request", "application", "app"],
+    "content": "Approved software can be installed from the Company Portal without a request. For anything not in the portal, open a ticket with the software name, business justification, and your manager's approval. Licensing review typically takes 2-3 business days."
+  },
+  {
+    "id": "wifi-001",
+    "title": "Cannot connect to office Wi-Fi",
+    "category": "network",
+    "keywords": ["wifi", "wi-fi", "wireless", "office", "network", "connect", "guest"],
+    "content": "Use the 'Corp-WiFi' network with your corporate credentials; 'Guest-WiFi' is for visitors and has no internal access. Forget the network and reconnect if you recently changed your password. Persistent failures in one area of the office should be reported with the location."
+  }
+]
