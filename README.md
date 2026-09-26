@@ -19,7 +19,7 @@ That guardrail pattern is the interesting part of this project.
 ## Features (planned / in progress)
 
 - [x] Knowledge-base lookup (FAQ-style retrieval, no vector DB needed for v1)
-- [ ] Claude API integration with tool use (function calling)
+- [x] Claude API integration with tool use (function calling)
 - [ ] `create_ticket` tool — logs a structured support ticket to disk
 - [ ] `check_service_status` tool — read-only, safe to call anytime
 - [ ] `restart_service` tool — destructive, requires explicit confirmation
